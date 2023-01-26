@@ -16,5 +16,9 @@ app.get("/about", (req, res) => {
   res.send("This is my about route..... ");
 });
 
+app.post("/test", (req, res) => {
+  res.send(req.body);
+});
+
 // Export the Express API
 module.exports = app;
